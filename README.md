@@ -25,17 +25,14 @@ I worked on this project to understand the sales performance of a UK-based onlin
 
 I prepared the transaction data in Python before carrying out the analysis.
 The cleaning steps were:
-
-1. Excluded invoices beginning with C, which the notebook identifies as cancellations.
-2. Excluded invoices beginning with A, which the notebook identifies as accounting adjustments.
-3. Removed records with zero or negative quantities.
-4. Removed records with zero or negative prices.
-5. Removed exact duplicate rows.
-6. Created a Revenue field by multiplying Quantity by Price.
-7. Both invoice prefixes were excluded so the analysis focused on valid sales transactions.
-
+- Excluded invoices beginning with C, which the notebook identifies as cancellations.
+- Excluded invoices beginning with A, which the notebook identifies as accounting adjustments.
+- Removed records with zero or negative quantities.
+- Removed records with zero or negative prices.
+- Removed exact duplicate rows.
+- Created a Revenue field by multiplying Quantity by Price.
+- Both invoice prefixes were excluded so the analysis focused on valid sales transactions.
 - Rows after cleaning: 1,007,912 (from 1,067,371 original rows).
-
 - Customer IDs that were missing were retained for overall sales analysis. For customer-level analysis, records without a Customer ID were excluded because they could not be linked to an identifiable customer.
 
 ## SQL Analysis
